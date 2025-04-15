@@ -105,8 +105,8 @@ function res(playerMove, computerMove){
     let result = document.querySelector('.result');
 
     result.innerHTML = `You
-        <img src="/DOM(doccumentObjectModel)/images/${playerMove}-emoji.png" class="icons you">
-        <img src="/DOM(doccumentObjectModel)/images/${computerMove}-emoji.png"  class="icons computer"> 
+        <img src="../DOM(doccumentObjectModel)/images/${playerMove}-emoji.png" class="icons you">
+        <img src="../DOM(doccumentObjectModel)/images/${computerMove}-emoji.png"  class="icons computer"> 
         Computer`;
 
     counterElement.innerHTML = `Wins: ${counter.Win} , Lose: ${counter.Lose} ,  Tie: ${counter.Tie}`;
