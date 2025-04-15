@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="stylesheet" href="/css/rockPaperScissors.css">
+</head>
+
+<body>
+    <p class="title">ROCK PAPER SCISSORS</p>
+    <button class="buttons" onclick=" 
+    playerMove = 'rock';
+    pickComputerMove();
+    if(computerMove==='rock'){
+        document.querySelector('.view').innerHTML = 'TIE';
+        counter.Tie++;
+    }
+    else if(computerMove==='paper'){
+        document.querySelector('.view').innerHTML = 'YOU LOSE';
+        counter.Lose++;
+    }
+    else{ 
+        document.querySelector('.view').innerHTML = 'YOU WON!!';
+        counter.Win++;
+    }
+    "><img src="/DOM(doccumentObjectModel)/images/rock-emoji.png" alt="rock" class="icons"></button>
+
+    <button class="buttons" onclick=" 
+        randomNumber = Math.random();
+        playerMove = 'paper';
+        pickComputerMove();
+    if(computerMove==='rock'){
+        document.querySelector('.view').innerHTML = 'YOU WON!!';
+        counter.Win++;
+    }
+    else if(computerMove==='paper'){
+        document.querySelector('.view').innerHTML = 'TIE';
+        counter.Tie++;
+    }
+    else {
+        document.querySelector('.view').innerHTML = 'YOU LOSE';
+        counter.Lose++;
+    }
+    "><img src="/DOM(doccumentObjectModel)/images/paper-emoji.png" alt="paper" class="icons"></button>
+
+    <button class="buttons" onclick=" 
+    randomNumber = Math.random();
+    playerMove = 'scissors';
+    pickComputerMove();
+    if(computerMove==='rock'){
+        document.querySelector('.view').innerHTML = 'YOU LOSE';
+        counter.Lose++;
+    }
+    else if(computerMove==='paper'){
+        document.querySelector('.view').innerHTML = 'YOU WON!!';
+        counter.Win++;
+    }
+    else {
+        document.querySelector('.view').innerHTML = 'TIE';
+        counter.Tie++;
+    }
+"><img src="/DOM(doccumentObjectModel)/images/scissors-emoji.png" alt="scissors" class="icons"></button>
+
+    <p class="view"></p>
+
+    <p class="result"></p>
+    <p class="js-counter counter"></p>
+    <button class="js-resetButton resetButton" onClick="resetScore()">Reset</button>
+
+</body>
+<script src="/js/rockPaperScissors.js"></script>
+
+</html>
